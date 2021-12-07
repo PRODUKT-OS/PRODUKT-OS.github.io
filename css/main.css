@@ -20,9 +20,17 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* background: var(--main-bg-color); */
-  background: var(--font-color-blue);
-  font-style: italic;
+  background: var(--main-bg-color);
+  /* background: var(--font-color-blue); */
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.glow-red {
+  font-size: 7vw;
+  color: #ffffcc;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green,
+    0 0 40px green, 0 0 55px green, 0 0 70px green;
 }
 
 .spacer {
@@ -34,22 +42,26 @@ body {
 }
 
 .wave-1 {
-  background-image: url(/images/waves/layered-waves-haikei.svg);
+  background-image: url(../images/waves/layered-waves-haikei.svg);
 }
 
 .wave-2 {
-  background-image: url(/images/waves/wave-haikei.svg);
+  background-image: url(../images/waves/wave-haikei.svg);
 }
 
 .block-1 {
   min-height: 200px;
-  background: var(--wave-main-bg-color-continuation);
+  /* background: var(--wave-main-bg-color-continuation); */
 }
 .block-2 {
   min-height: 200px;
-  background: var(--secondary-bg-color);
+  /* background: var(--secondary-bg-color); */
 }
-
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ==========================================================================
    Your custom CSS styles for smartphones and screens smaller than 480 px
    ========================================================================== */
