@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Your custom CSS styles
+   ========================================================================== */
+:root {
+  --main-bg-color: #241b2f;
+  --wave-main-bg-color-continuation: #1c1624;
+  --secondary-bg-color: #262335;
+  --font-color-blue: #38969a;
+  --font-color-red: #761544;
+  --font-color-green: #4f8b56;
+  --font-color-yellow: #a3a75f;
+  --font-color-orange: #b16e12;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background: var(--main-bg-color); */
+  background: var(--font-color-blue);
+  font-style: italic;
+}
+
+.spacer {
+  aspect-ratio: 900/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave-1 {
+  background-image: url(/images/waves/layered-waves-haikei.svg);
+}
+
+.wave-2 {
+  background-image: url(/images/waves/wave-haikei.svg);
+}
+
+.block-1 {
+  min-height: 200px;
+  background: var(--wave-main-bg-color-continuation);
+}
+.block-2 {
+  min-height: 200px;
+  background: var(--secondary-bg-color);
+}
+
+/* ==========================================================================
+   Your custom CSS styles for smartphones and screens smaller than 480 px
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  /* insert styles here */
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Clearfix
+ * Adding a 'clearfix' class will allow parent elements to contain a floated child element
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+  *zoom: 1;
+}
