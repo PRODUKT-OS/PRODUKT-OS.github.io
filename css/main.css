@@ -13,44 +13,6 @@
   --font-color-white: #ffffff;
 }
 
-#typewriter {
-  /* font-size: 2em; */
-  margin: 0;
-  /* font-family: "Courier New"; */
-}
-
-#typewriter:after {
-  content: "|";
-  animation: blink 500ms linear infinite alternate;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -60,17 +22,17 @@ html {
 }
 body {
   background: var(--main-bg-color);
-  /* background: var(--font-color-blue); */
   font-family: Consolas, "Courier New", monospace;
+  color: var(--font-color-white);
 }
 
-.glow-red {
+/* .glow-red {
   font-size: 7vw;
   color: #ffffcc;
   text-align: center;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green,
     0 0 40px green, 0 0 55px green, 0 0 70px green;
-}
+} */
 
 .red {
   color: var(--font-color-red);
@@ -116,9 +78,10 @@ body {
   display: flex;
   align-items: center;
   /* width: 50%; */
-  justify-content: center;
   min-height: 200px;
   /* background: var(--wave-main-bg-color-continuation); */
+  flex-direction: row;
+  /* justify-content: center; */
 }
 .block-2 {
   min-height: 200px;
@@ -128,7 +91,23 @@ body {
   font-size: 3vw;
   width: 75%;
   margin-top: -100px;
-  color: var(--font-color-white);
+}
+
+#presentation {
+  width: 60%;
+  margin-top: -100px;
+  margin-left: 15px;
+  font-size: 3vw;
+}
+
+#header-img {
+  background-color: var(--secondary-bg-color);
+  height: 38vw;
+}
+
+#header-img img {
+  padding: 12px;
+  height: inherit;
 }
 /* ==========================================================================
    Your custom CSS styles for smartphones and screens smaller than 480 px
@@ -171,4 +150,42 @@ body {
 
 .clearfix {
   *zoom: 1;
+}
+
+#typewriter {
+  /* font-size: 2em; */
+  margin: 0;
+  /* font-family: "Courier New"; */
+}
+
+#typewriter:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
