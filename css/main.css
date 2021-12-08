@@ -26,14 +26,6 @@ body {
   color: var(--font-color-white);
 }
 
-/* .glow-red {
-  font-size: 7vw;
-  color: #ffffcc;
-  text-align: center;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green,
-    0 0 40px green, 0 0 55px green, 0 0 70px green;
-} */
-
 .red {
   color: var(--font-color-red);
 }
@@ -77,15 +69,13 @@ body {
 .block-1 {
   display: flex;
   align-items: center;
-  /* width: 50%; */
   min-height: 200px;
-  /* background: var(--wave-main-bg-color-continuation); */
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
+
 .block-2 {
   min-height: 200px;
-  /* background: var(--secondary-bg-color); */
 }
 
 .block-1-2 {
@@ -106,19 +96,44 @@ body {
   width: 60%;
   margin-top: -100px;
   margin-left: 15px;
-  font-size: 3vw;
+  font-size: 2.3vw;
+}
+
+#presentation h1 {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+
+#presentation p {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 
 #header-img {
-  background-color: var(--secondary-bg-color);
-  margin-bottom: 80px;
+  /* background-color: var(--secondary-bg-color); */
+  margin-top: -100px;
 }
 
 #header-img img {
-  /* margin: 21px; */
   height: 30vw;
-  /* padding-bottom: 31px; */
-  border: 10px solid transparent;
+  border: 10px solid var(--secondary-bg-color);
+  border-radius: 20px;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 /* ==========================================================================
    Your custom CSS styles for smartphones and screens smaller than 480 px
@@ -198,5 +213,27 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
