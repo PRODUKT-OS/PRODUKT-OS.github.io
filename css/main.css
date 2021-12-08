@@ -81,11 +81,20 @@ body {
   min-height: 200px;
   /* background: var(--wave-main-bg-color-continuation); */
   flex-direction: row;
-  /* justify-content: center; */
+  justify-content: space-evenly;
 }
 .block-2 {
   min-height: 200px;
   /* background: var(--secondary-bg-color); */
+}
+
+.block-1-2 {
+  min-height: 200px;
+  display: flex;
+  background: var(--wave-main-bg-color-continuation);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .header-container {
   font-size: 3vw;
@@ -102,12 +111,14 @@ body {
 
 #header-img {
   background-color: var(--secondary-bg-color);
-  height: 38vw;
+  margin-bottom: 80px;
 }
 
 #header-img img {
-  padding: 12px;
-  height: inherit;
+  /* margin: 21px; */
+  height: 30vw;
+  /* padding-bottom: 31px; */
+  border: 10px solid transparent;
 }
 /* ==========================================================================
    Your custom CSS styles for smartphones and screens smaller than 480 px
