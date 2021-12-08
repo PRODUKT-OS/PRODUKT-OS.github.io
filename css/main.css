@@ -5,11 +5,50 @@
   --main-bg-color: #241b2f;
   --wave-main-bg-color-continuation: #1c1624;
   --secondary-bg-color: #262335;
-  --font-color-blue: #38969a;
-  --font-color-red: #761544;
-  --font-color-green: #4f8b56;
-  --font-color-yellow: #a3a75f;
-  --font-color-orange: #b16e12;
+  --font-color-blue: #38beb6;
+  --font-color-red: #ea2551;
+  --font-color-green: #91d52e;
+  --font-color-yellow: #ddd46c;
+  --font-color-orange: #fa9766;
+  --font-color-white: #ffffff;
+}
+
+#typewriter {
+  /* font-size: 2em; */
+  margin: 0;
+  /* font-family: "Courier New"; */
+}
+
+#typewriter:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 * {
@@ -33,6 +72,30 @@ body {
     0 0 40px green, 0 0 55px green, 0 0 70px green;
 }
 
+.red {
+  color: var(--font-color-red);
+}
+
+.blue {
+  color: var(--font-color-blue);
+}
+
+.yellow {
+  color: var(--font-color-yellow);
+}
+
+.green {
+  color: var(--font-color-green);
+}
+
+.orange {
+  color: var(--font-color-orange);
+}
+
+.white {
+  color: var(--font-color-white);
+}
+
 .spacer {
   aspect-ratio: 900/600;
   width: 100%;
@@ -50,6 +113,10 @@ body {
 }
 
 .block-1 {
+  display: flex;
+  align-items: center;
+  /* width: 50%; */
+  justify-content: center;
   min-height: 200px;
   /* background: var(--wave-main-bg-color-continuation); */
 }
@@ -58,9 +125,10 @@ body {
   /* background: var(--secondary-bg-color); */
 }
 .header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 3vw;
+  width: 75%;
+  margin-top: -100px;
+  color: var(--font-color-white);
 }
 /* ==========================================================================
    Your custom CSS styles for smartphones and screens smaller than 480 px
@@ -68,6 +136,9 @@ body {
 
 @media only screen and (max-width: 480px) {
   /* insert styles here */
+  .spacer {
+    aspect-ratio: 4/5;
+  }
 }
 
 /* ==========================================================================
